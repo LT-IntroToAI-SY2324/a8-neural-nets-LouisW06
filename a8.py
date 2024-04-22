@@ -10,9 +10,9 @@ xor_tdata = [
 ]
 
 
-xor_neuralnet = NeuralNet(2, 2, 1)
+xor_neuralnet = NeuralNet(2, 3, 1)
 
-xor_neuralnet.train(xor_tdata, iters = 1000, print_interval = 1000)
+xor_neuralnet.train(xor_tdata, iters = 1000, print_interval = 100)
 
 print(xor_neuralnet.test_with_expected(xor_tdata))
 
